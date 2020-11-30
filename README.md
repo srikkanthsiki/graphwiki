@@ -75,3 +75,7 @@ ref: inserting data into https://neo4j.com/developer/javascript/
 ref :https://neo4j.com/download-v2/?ref=developer-neo4j-desktop
 ref:https://www.oodlestechnologies.com/blogs/how-to-perform-crud-operation-in-nodejs-with-neo4j/
 ref:https://graphaware.com/neo4j/2013/10/11/neo4j-bidirectional-relationships.html
+
+## TODO and GOOD TO HAVE :
+1) more unit test will be add in susequent commits  
+2) functional testing done via postman
