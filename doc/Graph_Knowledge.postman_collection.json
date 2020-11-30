@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "31264bd7-717e-4292-888f-e0cb73d014a6",
+		"name": "Graph_Knowledge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post_noun_noun",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"noun\":\"srikkanth\",\r\n    \"verb\":\"friend\",\r\n    \"noun2\":\"sriram\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4200/test_api/ne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"test_api",
+						"ne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_noun_adj",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"noun\":\"badri\",\r\n    \"verb\":\"is\",\r\n    \"adj\":\"eating\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4200/test_api/neo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"test_api",
+						"neo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_verb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4201/test_api/neo/?verb=is",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4201",
+					"path": [
+						"test_api",
+						"neo",
+						""
+					],
+					"query": [
+						{
+							"key": "verb",
+							"value": "is"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_noun",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4200/test_api/neo/?noun=sriram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"test_api",
+						"neo",
+						""
+					],
+					"query": [
+						{
+							"key": "noun",
+							"value": "sriram"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_noun Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4200/test_api/neo/?noun=sriram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"test_api",
+						"neo",
+						""
+					],
+					"query": [
+						{
+							"key": "noun",
+							"value": "sriram"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doing NLP for one object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"$name\": \"abstract\",\r\n  \"$text\":\r\n   \"Anthropology is the scientific study of humanity, concerned with human behavior, human biology, and societies, in both the present and past, including past human species. Social anthropology studies patterns of behaviour, while cultural anthropology studies cultural meaning, including norms and values.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4300/api/startNLP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"api",
+						"startNLP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loan FROM XML TO Graphdb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4300/api/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"api",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
