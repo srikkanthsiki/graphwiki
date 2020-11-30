@@ -1,0 +1,33 @@
+{
+  "name": "KnowledgeGraph",
+  "version": "1.0.0",
+  "description": "Knowledge Graph",
+  "main": "node/app.js",
+  "repository": "https://github.com/srikkanthsiki/KnowledgeGraph.git",
+  "author": "srikkanth ramesh",
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest -i"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "corenlp": "^1.5.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "natural": "^2.1.5",
+    "neo4j-driver": "^4.0.2",
+    "wordnet-db": "^3.1.14",
+    "xml-flow": "^1.0.4",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  }
+}
