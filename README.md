@@ -1,6 +1,6 @@
-# wikigraphknowledge
+# wikiknowledgegraph
 
-Constains code and documents and video sales force Graph knowledge
+Constains code and documents and video sales force  knowledge Graph
 
 ## How to Present:
 
